@@ -7,34 +7,37 @@ $light-color: rgb(181, 181, 181);
    margin: 0;
    display: block;
    width: 100%;
+   min-height: 100vh;
    background-image: url('/assets/3.jpeg');
    background-size: cover;
    background-position: center;
-   background-attachment: fixed;
-   margin: 0; 
-   height: 100%;
+   background-attachment: fixed; 
+   
 }
-
-
 
 .card{
    background-color: $grey-color;
-   color: $light-color
-}
-a {
-   text-decoration: none; 
-   color: inherit; 
-}
-
-.ship-list{
-   cursor: pointer;
-}
-
-
-
-
-.btn{
    color: $light-color;
-   text-transform: uppercase;
-   width: 200px;
+   
 }
+
+.img-ship{
+   padding: 0;
+   padding-top: 0;
+
+}
+
+
+   .card-body{
+      padding: 10px;
+      
+      
+   }
+
+.info{
+   padding: 15px;
+   font-family: "Rajdhani", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+}
+

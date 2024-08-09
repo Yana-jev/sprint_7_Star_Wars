@@ -1,0 +1,40 @@
+
+@if(profile){
+<div class="container">
+   <div class="card mt-4">
+      <div class="row g-0 align-items-start">
+         <div class="col-md-5">
+         <img [src]="profile.image" class="img-fluid rounded-start" alt="{{ profile.name }}" (error)="setDefaultImage($event)">
+         </div>
+         <div class="col-md-7">
+         <div class="card-body">
+            <h5 class="card-title">{{ profile.name }}</h5>
+            <div class="row">
+               <div class="col">
+               <p class="card-text">Model: {{ profile.model }}</p>
+               <p class="card-text">Cost in credits: {{ profile.cost_in_credits }}</p>
+               <p class="card-text">Atmospheric speed: {{ profile.max_atmosphering_speed }}</p>
+               </div>
+               <div class="col">
+               <p class="card-text">Manufacturer: {{ profile.manufacturer }}</p>
+               <p class="card-text">Length: {{ profile.length }}</p>
+               <p class="card-text">Crew: {{ profile.crew }}</p>
+               </div>
+            </div>
+         </div>
+         </div>
+      </div>
+   </div>
+   </div>
+} @else {
+
+   <ng-template #loading>
+      <div class="container">
+      Loading...
+      </div>
+   </ng-template>
+   
+}
+
+
+

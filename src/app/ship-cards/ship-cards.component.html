@@ -1,9 +1,26 @@
 <div class="container">
-   <div class="card mt-4" >
-      <div class="card-body">
-      <h5 class="card-title"> {{profile.name}} </h5>
-      <p class="card-text"> {{profile.model}} </p>
+@for(profile of profiles; track $index){
+@if (profile) {
    
-      </div>
+   <div class="ship-list" [routerLink]="['/starship', profile.url.split('/').slice(-2, -1)[0]]">
+
+      
+         <div class="card mt-4" >
+            <div class="card-body">
+            <h5 class="card-title"> {{profile.name}} </h5>
+            <p class="card-text"> {{profile.model}} </p>
+            </div>
+         </div>
+      
    </div>
+
+} @else {
+   <div class="container">
+      Whoops, the Force is not with us right now.</div>
+} 
+}
+
+<div class="d-flex justify-content-center align-items-center mt-4 mb-4">
+   <!-- <button class="btn btn-dark mt-2"  (click)="loadMoreShips()">view more</button> -->
+</div>
 </div>
