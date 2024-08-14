@@ -1,5 +1,5 @@
 import { Component, inject, Input } from '@angular/core';
-import { Profile } from '../../data/interfaces/profile.interface';
+import { Profile } from '../../../data/interfaces/profile.interface';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';

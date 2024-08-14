@@ -1,8 +1,7 @@
 import { Component, HostListener, inject, Input } from '@angular/core';
-import { Profile } from '../../data/interfaces/profile.interface';
-import { ProfileService } from '../../data/services/profile.service';
-import { ActivatedRoute, RouterModule } from '@angular/router';
-import { RouterLink } from '@angular/router';
+import { Profile } from '../../../data/interfaces/profile.interface';
+import { ProfileService } from '../../../data/services/profile.service';
+import { RouterModule } from '@angular/router';
 import { concatMap } from 'rxjs';
 
 

@@ -1,0 +1,25 @@
+$grey-color: #212529;
+$light-color: rgb(181, 181, 181);
+
+
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+.card{
+   color: $light-color;
+   background-color: $grey-color;
+   
+   width: 30%;
+   input{
+      background-color: $light-color;
+   }
+}
+
+.btn{
+   color: $grey-color;
+   background-color: $light-color;
+}
