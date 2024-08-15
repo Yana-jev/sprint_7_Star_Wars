@@ -1,0 +1,29 @@
+$grey-color: #1c1e21;
+$light-color: rgb(181, 181, 181);
+$dangerColor: #E32636;
+
+
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+.card{
+   color: $light-color;
+   background-color: $grey-color;
+   
+   width: 30%;
+   input{
+      background-color: $light-color;
+   }
+}
+
+.btn{
+   color: $grey-color;
+   background-color: $light-color;
+}
+small{
+   color: $dangerColor;
+}

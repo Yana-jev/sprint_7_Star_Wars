@@ -1,5 +1,6 @@
-$grey-color: #212529;
+$grey-color: #1c1e21;
 $light-color: rgb(181, 181, 181);
+$dangerColor: #E32636;
 
 
 .container{
@@ -22,4 +23,7 @@ $light-color: rgb(181, 181, 181);
 .btn{
    color: $grey-color;
    background-color: $light-color;
+}
+small{
+   color: $dangerColor;
 }

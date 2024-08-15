@@ -1,0 +1,32 @@
+:host {
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100%;
+   background-image: url('/assets/robots.jpeg');
+   background-size: cover;
+   background-position: center;
+   color: #ffffff;
+   text-align: center;
+}
+
+.container {
+   text-transform: uppercase;
+   font-family: "Rajdhani", sans-serif;
+   font-weight: 600;
+   font-size: 2.5rem;
+   background: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+   padding: 20px 40px;
+   border-radius: 10px;
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Тень */
+   max-width: 600px;
+   margin-bottom: 140px;
+}
+
+.row {
+   padding-top: 20px;
+   color: #FFD700; 
+}

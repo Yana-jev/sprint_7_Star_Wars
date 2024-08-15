@@ -1,5 +1,19 @@
 {
-
-   "users": []
-
+  "users": [
+    {
+      "email": "lolo@g.com",
+      "password": "$2a$10$/XU82Ss2qHQMvPEgttprT.OicfXmMxQX18azGnD5do3TpG87RvPgS",
+      "id": 1
+    },
+    {
+      "email": "jojojo@g.com",
+      "password": "$2a$10$xImNFLWJuTwdpg7GkVfxe.a3Ci1YkitYafqTG5YMRgx4I2J1HYmLS",
+      "id": 2
+    },
+    {
+      "email": "pepe@g.com",
+      "password": "$2a$10$o653hjfe2TDKjXTQAALBT.Ko4x86TzhPUUVLRwZ4Kr2O9B8hNpfUm",
+      "id": 3
+    }
+  ]
 }

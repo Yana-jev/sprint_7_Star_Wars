@@ -1,1 +1,28 @@
-<p>register works!</p>
+
+<div class="container">
+   <div class="card mt-4">
+      <form [formGroup] = 'registerForm' (ngSubmit)="submitRegister()">
+         <div class="card-body">
+         
+            <div class="mb-3">
+               <label for="exampleFormControlInput1" class="form-label">Email address</label>
+               <input formControlName="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+               @if(registerForm.get('email')?.invalid && registerForm.get('email')?.touched){
+                  <p><small class="danger">email is requiered</small></p>
+               }
+            </div>
+            <label for="inputPassword5" class="form-label">Password</label>
+            <input formControlName="password" type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            @if(registerForm.get('password')?.invalid && registerForm.get('password')?.touched){
+               <p><small class="danger">password is requiered</small></p>
+            }
+            
+            <div class="mt-4 gap-2 d-flex justify-content-center">
+               <button [disabled]="registerForm.invalid" class="btn btn-dark">Sign Up</button>
+            </div>
+            
+         </div>
+      </form>
+   </div>
+</div>
+

@@ -3,7 +3,7 @@ export interface iLogin {
    password: string
 }
 
-export interface iUser {
+export interface iSignUp {
    nombre: string,
    email: string,
    password: string
