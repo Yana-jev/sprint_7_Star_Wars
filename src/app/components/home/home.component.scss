@@ -19,11 +19,7 @@ $light-color: rgb(181, 181, 181);
 
 
 }
-.center-logo {
-   
-   left: 50%;
-   transform: translateX(-50%);
-}
+
 
 i{
    color: white;
@@ -48,7 +44,22 @@ hr{
 }
 
 .nav-link:hover {
-   border-bottom-color: blue; /* Цвет подчеркивания при наведении */
+   border-bottom-color: blue; 
    box-sizing: border-box;
 
+}
+.login{
+   text-decoration: none;
+   color:white; 
+   border-bottom: 2px solid transparent; 
+   box-sizing: border-box;
+   font-weight: strong;
+   cursor: pointer;
+
+}
+
+.login:hover {
+   border-bottom-color: blue; 
+   box-sizing: border-box;
+   
 }

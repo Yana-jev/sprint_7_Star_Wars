@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../../auth.service';
-import { FormControl, FormGroup, FormsModule, Validators } from '@angular/forms';
+import { AuthService } from '../../../data/services/auth.service';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { ErrorDialogComponent } from '../error-dialog/error-dialog.component';
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -14,7 +18,7 @@ export class LoginComponent {
 
 
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private router: Router, public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
@@ -29,16 +33,20 @@ export class LoginComponent {
       this.authService.login(this.loginForm.value).subscribe(
         (response) => {
           console.log('Login successful:', response);
-          // Здесь можно добавить логику для перенаправления или хранения токена
+          this.router.navigate(['/home']);
         },
         (error) => {
           console.error('Login failed:', error);
+          this.openErrorDialog('Login failed. Please check your credentials and try again.');
         }
       );
+}}
 
+openErrorDialog(message: string): void {
+  this.dialog.open(ErrorDialogComponent, {
+    data: { message: message }
+  });
 }
-  }
-
 
 
 }

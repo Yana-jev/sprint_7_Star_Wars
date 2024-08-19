@@ -1,0 +1,15 @@
+$dark-color: #020202;
+$grey-color: #212529;
+$light-color: rgb(181, 181, 181);
+
+:host {
+   padding: 0;
+   margin: 0;
+   display: block;
+   background-color: $grey-color;
+
+   
+}
+.container{
+   background-color: rgba(255, 255, 255, 0.6);
+}

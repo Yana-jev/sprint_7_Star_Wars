@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 
+
 export const routes: Routes = [
    {
       path: '', 
@@ -17,10 +18,10 @@ export const routes: Routes = [
    {path: '', component: HeaderComponent, children:[
 
       { path: 'starship', component: ShipCardsComponent}, 
-      { path: 'starship/:id', component: StrashipInfoComponent },
-      {path: 'register', component: RegisterComponent},
-      {path: 'login', component: LoginComponent}
+      { path: 'starship/:id', component: StrashipInfoComponent, },
+      {path: 'register', component: RegisterComponent, },
+      {path: 'login', component: LoginComponent, },
+      { path: 'home', component: HomeComponent},
    ]},
-   { path: 'home', component: HomeComponent},
    {path: '**', component: NotfoundComponent}
 ];

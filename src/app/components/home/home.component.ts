@@ -5,6 +5,7 @@ import { ProfileService } from '../../../data/services/profile.service';
 import { ShipCardsComponent } from '../ship-cards/ship-cards.component';
 import { HeaderComponent } from "../header/header.component";
 import { RouterModule } from '@angular/router';
+import { AuthService } from '../../../data/services/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -14,14 +15,27 @@ import { RouterModule } from '@angular/router';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  profileService = inject(ProfileService);
-  profiles: Profile[] = []
+//   profileService = inject(ProfileService);
+//   profiles: Profile[] = []
 
+//   isLogged = false; 
 
-  constructor(){
-    this.profileService.getShipAcount().subscribe(val => {
-      this.profiles = val
-    })
-  }
+//   constructor(private authService: AuthService){
+//     this.profileService.getShipAcount().subscribe(val => {
+//       this.profiles = val
+//     })
+//   }
+
+// ngOnInit(): void {
+//   this.authService.isLoggedIn().subscribe((loggedIn) => {
+//     this.isLogged = loggedIn;
+//   });
   
+// }
+
+// onLogout() {
+//   this.authService.logout();
+// }
+
+
 }

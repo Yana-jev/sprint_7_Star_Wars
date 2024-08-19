@@ -1,51 +1,64 @@
 
-   <div class="container-fluid position-relative">
-      <div class="row align-items-start mt-4">
-      <div class="col d-flex justify-content-start">
-         <a class="social-link m-2" href="https://www.facebook.com/StarWars" target="_blank" rel="noopener noreferrer" title="facebook">
-            <i class="bi bi-facebook"></i>
-         </a>
-         <a class="social-link m-2" href="https://www.instagram.com/starwars/" target="_blank" rel="noopener noreferrer" title="instagram">
-            <i class="bi bi-instagram"></i>
-         </a>
-         <a class="social-link m-2" href="https://twitter.com/starwars" target="_blank" rel="noopener noreferrer" title="tweeter">
-            <i class="bi bi-twitter"></i>
-         </a>
-         <a class="social-link m-2" href="https://www.youtube.com/user/starwars" target="_blank" rel="noopener noreferrer" title="youtube">
-            <i class="bi bi-youtube"></i>
-         </a>
-      </div>
-      <div class="col">
-         <a href="/home"><img class="swLogo center-logo" src="assets/starwarslogo.png" alt="sw-logo"></a>
-      </div>
-      </div>
+<div class="container-fluid position-relative">
+   <div class="row align-items-star mt-4">
+   <div class="col d-flex justify-content-start">
+      <a class="social-link m-2" href="https://www.facebook.com/StarWars" target="_blank" rel="noopener noreferrer" title="facebook">
+         <i class="bi bi-facebook"></i>
+      </a>
+      <a class="social-link m-2" href="https://www.instagram.com/starwars/" target="_blank" rel="noopener noreferrer" title="instagram">
+         <i class="bi bi-instagram"></i>
+      </a>
+      <a class="social-link m-2" href="https://twitter.com/starwars" target="_blank" rel="noopener noreferrer" title="tweeter">
+         <i class="bi bi-twitter"></i>
+      </a>
+      <a class="social-link m-2" href="https://www.youtube.com/user/starwars" target="_blank" rel="noopener noreferrer" title="youtube">
+         <i class="bi bi-youtube"></i>
+      </a>
+   </div>
+   <div class="col-auto">
+      <a href="/home"><img class="swLogo center-logo" src="assets/starwarslogo.png" alt="sw-logo"></a>
+   </div>
+   
+   <div class="login col d-flex justify-content-end align-items-start">
+      @if(!isLogged){
+   
+         <a class="login me-2" href="/login">LOG IN </a>
+         <a class="login ms-2 me-2" href="/register">SIGN IN</a>
+      } 
+      @else {
+         <a class="login" (click)="onLogout()">LOG OUT</a>
+         
+      } 
+
+      
    </div>
 
 
+   </div>
+</div>
 
-
-   <div class="mt-4">
-      <hr>
-         <nav class="nav d-flex">
-         <div class="container-fluid d-flex justify-content-center">
-            <div class="row">
-               <div class="col">
-               <ul class="nav nav-underline">
-                  <div class="vr"></div>
-                  <li>
-                     <a href="/home" class="nav-link">HOME</a>
-                  </li>
-                  <div class="vr"></div>
-                  <li>
-                     <a href="/starship" class="nav-link">STARSHIPS</a>
-                  </li>
-                  <div class="vr"></div>
-               </ul>
-               </div>
+<div class="mt-4">
+   <hr>
+      <nav class="nav d-flex">
+      <div class="container-fluid d-flex justify-content-center">
+         <div class="row">
+            <div class="col">
+            <ul class="nav nav-underline">
+               <div class="vr"></div>
+               <li>
+                  <a href="/home" class="nav-link">HOME</a>
+               </li>
+               <div class="vr"></div>
+               <li>
+                  <a href="/starship" class="nav-link">STARSHIPS</a>
+               </li>
+               <div class="vr"></div>
+            </ul>
             </div>
          </div>
-         </nav>
-      <hr>
-   </div>
+      </div>
+      </nav>
+   <hr>
+</div>
 
 <router-outlet></router-outlet>

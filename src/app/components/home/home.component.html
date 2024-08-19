@@ -1,4 +1,4 @@
-
+<!-- 
 
 <div class="container-fluid position-relative">
    <div class="row align-items-start">
@@ -16,8 +16,21 @@
          <i class="bi bi-youtube"></i>
       </a>
    </div>
-   <div class="col mt-4">
-      <img class="swLogo center-logo" src="assets/4.svg" alt="sw-logo">
+   <div class="col mt-4 d-flex justify-content-center">
+      <img class="swLogo center-logo" src="assets/vectorpaint.png" alt="sw-logo">
+   </div>
+   <div class=" col mt-4 d-flex justify-content-end align-items-start">
+      @if(!isLogged){
+
+         <a class="login me-2" href="/login">LOG IN </a>
+         
+         <a class="login ms-2 me-2" href="/register">SIGN IN</a>
+      } 
+      @else{
+         <a class="login" (click)="onLogout()">LOG OUT</a>
+      } 
+
+      
    </div>
    </div>
 </div>
@@ -45,4 +58,4 @@
       </nav>
    <hr>
 </div>
-
+ -->

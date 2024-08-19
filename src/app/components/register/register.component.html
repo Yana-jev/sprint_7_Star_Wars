@@ -16,6 +16,11 @@
             @if(registerForm.get('password')?.invalid && registerForm.get('password')?.touched){
                <p><small class="danger">password is requiered</small></p>
             }
+            <label for="inputPassword6" class="form-label mt-3">Confirm Password</label>
+            <input formControlName="confirmPassword" type="password" id="inputPassword6" class="form-control " aria-describedby="passwordHelpBlock">
+            @if(registerForm.get('confirmPassword')?.touched && registerForm.get('confirmPassword')?.value !== registerForm.get('password')?.value){
+               <p><small class="danger">passwords do not match</small></p>
+            }
             
             <div class="mt-4 gap-2 d-flex justify-content-center">
                <button [disabled]="registerForm.invalid" class="btn btn-dark">Sign Up</button>
