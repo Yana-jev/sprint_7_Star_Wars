@@ -1,9 +1,7 @@
-import { Component } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../../data/services/auth.service';
-
-
 
 
 @Component({
@@ -17,8 +15,7 @@ export class HeaderComponent {
 
 isLogged!: boolean; 
 
-  constructor(public authService: AuthService, private router: Router) {}
-
+authService = inject(AuthService);
 
 ngOnInit(): void {
 
@@ -29,6 +26,6 @@ ngOnInit(): void {
     }
 
 onLogout() {
-        this.authService.logout();
-      }
+  this.authService.logout();
+  }
 }

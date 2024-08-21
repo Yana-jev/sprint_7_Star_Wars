@@ -1,0 +1,17 @@
+$dark-color: #020202;
+$grey-color: #212529;
+$light-color: rgb(227, 227, 227);
+
+
+:host{
+   padding: 15px;
+   font-family: "Rajdhani", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+}
+
+.card{
+   width: 250px;
+   background-color: $grey-color;
+   color: $light-color;
+}

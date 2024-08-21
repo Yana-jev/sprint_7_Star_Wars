@@ -3,8 +3,7 @@ $grey-color: #212529;
 $light-color: rgb(181, 181, 181);
 
 :host {
-   padding: 0;
-   margin: 0;
+
    display: block;
    width: 100%;
    min-height: 100vh;
@@ -18,21 +17,18 @@ $light-color: rgb(181, 181, 181);
 .card{
    background-color: $grey-color;
    color: $light-color;
+   .card-title{
+      font-size: 30px;
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+   }
    
 }
 
-.img-ship{
-   padding: 0;
-   padding-top: 0;
-
-}
 
 
-   .card-body{
-      padding: 10px;
-      
-      
-   }
+
 
 .info{
    padding: 15px;

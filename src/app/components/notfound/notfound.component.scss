@@ -14,16 +14,15 @@
 }
 
 .container {
+
    text-transform: uppercase;
    font-family: "Rajdhani", sans-serif;
-   font-weight: 600;
-   font-size: 2.5rem;
-   background: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+   font-size: clamp(1.2rem, 4vw, 2.5rem); /* Используем clamp для адаптивного размера */
+   background: rgba(0, 0, 0, 0.6); 
    padding: 20px 40px;
    border-radius: 10px;
-   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Тень */
-   max-width: 600px;
-   margin-bottom: 140px;
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); 
+   line-height: 1.4;
 }
 
 .row {

@@ -19,16 +19,12 @@ export class ShipCardsComponent {
   loading = false;
 
 
-  // constructor(){
-  //   this.profileService.getShipAcount().subscribe(val => {
-  //     this.profiles = val
-  //   })
-  // }
+
   constructor(){
-    this.loadMoreShips(); // Загрузить начальные данные
+    this.loadMoreShips(); 
   }
 
-  // Функция для загрузки большего количества кораблей
+
   loadMoreShips() {
     if (this.loading) return;
     this.loading = true;
@@ -42,7 +38,7 @@ export class ShipCardsComponent {
     ).subscribe();
   }
 
-  // Обработчик прокрутки
+
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
     const pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;

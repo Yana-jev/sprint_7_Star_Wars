@@ -1,0 +1,28 @@
+@if(films.length > 0){
+
+<div class="mx-5">
+   <hr class="custom-hr mt-5">
+   <p class="text-light mx-2 custom-font">FILMS</p>
+   <hr class="custom-hr">
+</div>
+
+<div class="container-fluid">
+   <div class="d-flex justify-content-center gap-3">
+      <div class="d-flex flex-wrap gap-4">
+         @for(film of films; track $index){
+
+            <div class="mt-5 d-flex justify-content-around">
+               <div class="card custom-card mb-4">
+                  <img [src]="getFilmImage(film)" alt="{{film.title}}" (error)="setDefaultImage($event)">
+                  <div class="card-body text-center">
+                  <p class="card-title"> Episode: {{convertToRoman(film.episode_id)}}</p>
+                  <p class="card-title">{{film.title}}</p>
+
+                  </div>
+               </div>
+            </div>
+         }
+            </div>
+         </div>
+      </div>
+      }

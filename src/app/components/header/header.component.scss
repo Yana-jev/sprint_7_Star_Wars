@@ -1,12 +1,9 @@
 $grey-color: #212529;
-$light-color: rgb(181, 181, 181);
+$light-color: rgb(227, 227, 227);
 
 .swLogo{
    max-width: 350px;
-
-
 }
-
 
 i{
    color: $light-color;
@@ -14,8 +11,7 @@ i{
 
 a.nav-link{
    color: $light-color;
-   border-top: none ;   /* Верхняя обводка */
-
+   border-top: none ;
 
 }
 
@@ -31,7 +27,7 @@ hr{
 }
 
 .nav-link:hover {
-   border-bottom-color: blue; /* Цвет подчеркивания при наведении */
+   border-bottom-color: blue;
    box-sizing: border-box;
 
 }
