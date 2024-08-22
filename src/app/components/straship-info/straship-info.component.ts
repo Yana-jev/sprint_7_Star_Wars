@@ -7,6 +7,7 @@ import { HeaderComponent } from "../header/header.component";
 import { PilotsComponent } from '../pilots/pilots.component';
 import { forkJoin } from 'rxjs';
 import { FilmsComponent } from '../../films/films.component';
+import { ProfileService } from '../../../data/services/profile.service';
 
 
 @Component({
@@ -27,11 +28,11 @@ export class StrashipInfoComponent {
     const id = this.route.snapshot.paramMap.get('id');
     this.http.get<Profile>(`https://swapi.dev/api/starships/${id}`).subscribe(data => {
       this.profile = { ...data, image: this.getImageUrl(data.url) };
-
       this.loadPilots(data.pilots);
       this.loadFilms(data.films)
     });
   }
+
 
   private loadPilots(pilotUrls: string[]): void {
     if (pilotUrls.length === 0) return;
@@ -61,7 +62,6 @@ export class StrashipInfoComponent {
 
   setDefaultImage(event: Event) {
     const img = event.target as HTMLImageElement;
-  
     img.src = 'assets/noship.jpg'; 
   }
 }

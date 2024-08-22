@@ -14,9 +14,6 @@ private authUrl = 'http://localhost:3000';
 private loggedIn = new BehaviorSubject<boolean>(false);
 redirectUrl: string | null = null;
 
-// public hasToken(): boolean {
-//   return !!localStorage.getItem('accessToken');
-// }
 
 constructor(
   private http: HttpClient, 
@@ -36,11 +33,6 @@ public hasToken(): boolean {
   return false;
 }
 
-//   constructor(private http: HttpClient, private router: Router) { 
-//     if (this.hasToken()) {
-//       this.loggedIn.next(true);
-//   }
-// }
 
   signUp(user: iSignUp): Observable<any> {
     return this.http.post(`${this.authUrl}/register`, user)
@@ -64,6 +56,16 @@ public hasToken(): boolean {
   
   isLoggedIn(): Observable<boolean> {
     return this.loggedIn.asObservable();
+  }
+
+  public isUserLoggedIn(): boolean {
+    if (this.hasToken()) {
+      if (!this.loggedIn.value) {
+        this.loggedIn.next(true);
+      }
+      return true;
+    }
+    return false;
   }
 
   logout(): void {

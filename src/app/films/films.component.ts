@@ -15,7 +15,7 @@ export class FilmsComponent {
 
 
   getFilmImage(film: Film): string {
-    return this.profileService.getFilmImageUrl(film.url);
+    return this.profileService.getImageUrl(film.url, 'films');
   } 
 
   setDefaultImage(event: Event) {

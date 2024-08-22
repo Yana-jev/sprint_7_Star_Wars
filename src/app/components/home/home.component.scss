@@ -1,4 +1,6 @@
-
+$dark-color: #020202;
+$grey-color: #212529;
+$light-color: rgb(227, 227, 227);
 
 :host {
    padding: 0;
@@ -9,57 +11,41 @@
    background-image: url('/assets/main.jpeg');
    background-size: cover;
    background-position: center;
+   font-family: "Rajdhani", sans-serif;
+   font-weight: 500;
+   font-style: normal;
 }
 
 $grey-color: #212529;
 $light-color: rgb(181, 181, 181);
 
-.swLogo{
-   max-width: 350px;
-
-
-}
-
-
-i{
-   color: white;
-}
-
-a.nav-link{
-   color: white;
-   border-top: none ;   /* Верхняя обводка */
-
-
-}
-
-hr{
-   margin: 0;
-}
-
-.nav-link {
-   text-decoration: none;
-   border-bottom: 2px solid transparent; 
-   transition: border-color 0.3s;
+.card{
+   background-color: rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+   border: none; 
+   transition: transform 0.3s ease-in-out; 
    
+   .card-body{
+      color: $light-color;
+      text-decoration: none;
+      transition: border-color 0.3s;
+      border-radius: inherit;
+      
+   }
+   a {
+      
+      text-decoration: none;
+      color: inherit; 
+   }
+   &:hover {
+      transform: scale(1.05); 
+   }
 }
 
-.nav-link:hover {
-   border-bottom-color: blue; 
-   box-sizing: border-box;
-
+h5{
+   font-family: "Rajdhani", sans-serif;
+      font-weight: 500;
+      font-style: normal;
 }
-.login{
-   text-decoration: none;
-   color:white; 
-   border-bottom: 2px solid transparent; 
-   box-sizing: border-box;
-   font-weight: strong;
-   cursor: pointer;
+.content{ padding-top: 5rem;}
 
-}
-
-.login:hover {
-   border-bottom-color: blue; 
-   box-sizing: border-box;
-   
-}

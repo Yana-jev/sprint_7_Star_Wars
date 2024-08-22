@@ -6,22 +6,27 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { PilotsComponent } from './components/pilots/pilots.component';
+import { FilmsComponent } from './films/films.component';
+import { VisualGuideComponent } from './visual-guide/visual-guide.component';
+import { AuthService } from '../data/services/auth.service';
+import { authGuard } from './guard/auth.guard';
 
 
 export const routes: Routes = [
-   {
-      path: '', 
-      redirectTo: '/login', 
-      pathMatch: 'full'
-   },
+
 
    {path: '', component: HeaderComponent, children:[
 
-      { path: 'starship', component: ShipCardsComponent}, 
-      { path: 'starship/:id', component: StrashipInfoComponent, },
-      {path: 'register', component: RegisterComponent, },
-      {path: 'login', component: LoginComponent, },
-      { path: 'home', component: HomeComponent},
+      { path: 'starship', component: ShipCardsComponent, canActivate: [authGuard]}, 
+      { path: 'starship/:id', component: StrashipInfoComponent },
+      { path: 'register', component: RegisterComponent, },
+      { path: 'login', component: LoginComponent, },
+      { path: 'home', component: HomeComponent, canActivate: [authGuard]},
+      { path: 'pilots', component: PilotsComponent},
+      { path: 'films', component: FilmsComponent},
+      { path: 'visual-guide/:category', component: VisualGuideComponent},
+
    ]},
    {path: '**', component: NotfoundComponent}
 ];

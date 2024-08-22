@@ -39,6 +39,9 @@ export class ShipCardsComponent {
   }
 
 
+  getStarshipId(profile: Profile): string {
+    return profile.url.split('/').slice(-2, -1)[0];
+  }
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
     const pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;

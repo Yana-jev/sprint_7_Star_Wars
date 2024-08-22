@@ -64,6 +64,7 @@ export interface Planets {
    created: string; 
    edited: string;
    image?: string;
+   
 }
 
 export interface Species {
@@ -83,4 +84,21 @@ export interface Species {
    edited: string
    image?: string;
 
+}
+
+export interface Characters {
+   name: string;
+   gender: string;
+   image?: string
+   url: string;
+}
+
+
+export interface Vehicles {
+   name: string;
+   model: string;
+   vehicle_class: string;
+   cargo_capacity: string;
+   image?: string
+   url: string;
 }

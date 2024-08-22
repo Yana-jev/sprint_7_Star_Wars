@@ -17,7 +17,7 @@ export class PilotsComponent {
 
 
   getPilotImage(pilot: Pilot): string {
-    return this.profileService.getPilotImageUrl(pilot.url);
+    return this.profileService.getImageUrl(pilot.url, 'characters');
   } 
 
   setDefaultImage(event: Event) {

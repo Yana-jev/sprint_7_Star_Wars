@@ -9,6 +9,26 @@
       "email": "leya@g.com",
       "password": "$2a$10$WDpzaQLOkkmxtW.M9dDOk.vj.X1w1RiDhw9evXT6Odt905zOEjH2O",
       "id": 2
+    },
+    {
+      "email": "darth@gmail.com",
+      "password": "$2a$10$bmCpUAayjeGxa6x9wXqfteQoGLV10PtFs0l9jegxFeydx7GnO0/2q",
+      "id": 3
+    },
+    {
+      "email": "luke@g.com",
+      "password": "$2a$10$sLTTmsVic3OjCCXI9YDUKu3WeSma5Houo0I6Tu.0ZsNaZq4VWiBRW",
+      "id": 4
+    },
+    {
+      "email": "kirill@wad.cat",
+      "password": "$2a$10$73BuNbq6GTzQ2OaGgHHwFekG7Eu.D9EkMCouvYS1do8vrh/NJt6c.",
+      "id": 5
+    },
+    {
+      "email": "iamyourfather@gmail.com",
+      "password": "$2a$10$GYbZ0r22N8w/66o1bnQL1.AEoQ3mN4F8Us8kxy0vPqi4obdLgtZRS",
+      "id": 6
     }
   ]
 }
