@@ -14,6 +14,16 @@
       "email": "iamyourfather@gmail.com",
       "password": "$2a$10$CT4FOPUouQLrFy3E/32vFeLS0qrzl7DM3SamAmSN87p4TG4OO3saW",
       "id": 3
+    },
+    {
+      "email": "mimi@gamil.com",
+      "password": "$2a$10$voatntU0.YjOiJehtQ10Uek54yNjzYvZuwCeC1zJaH2/0bBwtpuse",
+      "id": 4
+    },
+    {
+      "email": "jojojo@g.com",
+      "password": "$2a$10$7qRFlJvscapbJ/mGu07keevgy1jB0EJCR2A05tOoBv56TjwYi9bwC",
+      "id": 5
     }
   ]
 }
