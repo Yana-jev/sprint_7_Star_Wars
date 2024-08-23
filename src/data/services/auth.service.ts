@@ -71,7 +71,7 @@ public hasToken(): boolean {
   logout(): void {
     localStorage.removeItem('accessToken');
     this.loggedIn.next(false);
-    this.router.navigate(['/login']); 
+    this.router.navigate(['/home']); 
   }
 }
 
