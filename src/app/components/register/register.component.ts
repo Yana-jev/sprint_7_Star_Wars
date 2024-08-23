@@ -36,7 +36,7 @@ submitRegister() {
     this.authService.signUp(userData).subscribe(
       (response) => {
         console.log('Registration successful:', response);
-        this.router.navigate(['/login']);
+        this.router.navigate(['/home']);
       },
       (error) => {
         console.error('Registration failed:', error);

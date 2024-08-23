@@ -24,6 +24,11 @@
       "email": "jojojo@g.com",
       "password": "$2a$10$7qRFlJvscapbJ/mGu07keevgy1jB0EJCR2A05tOoBv56TjwYi9bwC",
       "id": 5
+    },
+    {
+      "email": "pepe@g.com",
+      "password": "$2a$10$Gzwm4yYPU5AsQ.dl3/NAve0XDaF5Le95puayjsNE4mJbzvg5fQNde",
+      "id": 6
     }
   ]
 }
