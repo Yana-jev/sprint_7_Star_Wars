@@ -1,7 +1,7 @@
 import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable, tap } from 'rxjs';
+import { BehaviorSubject, Observable, switchMap, tap } from 'rxjs';
 import { Router } from '@angular/router';
 import { iLogin, iSignUp } from '../interfaces/users.interface';
 import { isPlatformBrowser } from '@angular/common';
@@ -35,8 +35,9 @@ public hasToken(): boolean {
 
 
   signUp(user: iSignUp): Observable<any> {
-    return this.http.post(`${this.authUrl}/register`, user)
-    ;
+    return this.http.post(`${this.authUrl}/register`, user).pipe(
+      switchMap(() => this.login({ email: user.email, password: user.password })) 
+    );
   }
 
   login(credentials: iLogin): Observable<any> {

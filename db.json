@@ -29,6 +29,16 @@
       "email": "pepe@g.com",
       "password": "$2a$10$Gzwm4yYPU5AsQ.dl3/NAve0XDaF5Le95puayjsNE4mJbzvg5fQNde",
       "id": 6
+    },
+    {
+      "email": "llll@g.com",
+      "password": "$2a$10$CjGR3jxh/jmlaS0ASmCW7efZzlSpGVo0tiJcRkL6DDO/PPjCQBowq",
+      "id": 7
+    },
+    {
+      "email": "sss@g.com",
+      "password": "$2a$10$vs5k/h6/byu02XLYhSobreQRnWI2p42tioLbcO8IpY1PuZSoaTH1i",
+      "id": 8
     }
   ]
 }
