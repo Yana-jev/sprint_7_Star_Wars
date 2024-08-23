@@ -9,13 +9,13 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { PilotsComponent } from './components/pilots/pilots.component';
 import { FilmsComponent } from './films/films.component';
 import { VisualGuideComponent } from './visual-guide/visual-guide.component';
-import { AuthService } from '../data/services/auth.service';
 import { authGuard } from './guard/auth.guard';
 
 
 export const routes: Routes = [
 
 
+   { path: '', redirectTo: 'login', pathMatch: 'full' },
    {path: '', component: HeaderComponent, children:[
 
       { path: 'starship', component: ShipCardsComponent, canActivate: [authGuard]}, 

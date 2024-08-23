@@ -3,7 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../../data/services/auth.service';
 
-
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -14,7 +13,6 @@ import { AuthService } from '../../../data/services/auth.service';
 export class HeaderComponent {
 
 isLogged!: boolean; 
-
 authService = inject(AuthService);
 
 ngOnInit(): void {
@@ -28,4 +26,6 @@ ngOnInit(): void {
 onLogout() {
   this.authService.logout();
   }
+
+
 }

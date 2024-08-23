@@ -3,12 +3,14 @@ import { Characters, Film, Planets, Profile, Species, Vehicles } from '../../dat
 import { ProfileService } from '../../data/services/profile.service';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
+import { HeaderComponent } from "../components/header/header.component";
 import { response } from 'express';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-visual-guide',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HeaderComponent],
   templateUrl: './visual-guide.component.html',
   styleUrl: './visual-guide.component.scss'
 })
@@ -20,10 +22,10 @@ export class VisualGuideComponent {
   vehicles: Vehicles[]=[]
   starships: Profile[]=[]
   private nextPageUrl: string | null = null;
-  
-  category: string = '';
   private profileService = inject(ProfileService);
   private route = inject(ActivatedRoute);
+  
+  category: string = '';
 
   loadData(): void {
     switch (this.category) {

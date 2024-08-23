@@ -7,7 +7,6 @@ import { HeaderComponent } from "../header/header.component";
 import { PilotsComponent } from '../pilots/pilots.component';
 import { forkJoin } from 'rxjs';
 import { FilmsComponent } from '../../films/films.component';
-import { ProfileService } from '../../../data/services/profile.service';
 
 
 @Component({
@@ -32,7 +31,6 @@ export class StrashipInfoComponent {
       this.loadFilms(data.films)
     });
   }
-
 
   private loadPilots(pilotUrls: string[]): void {
     if (pilotUrls.length === 0) return;

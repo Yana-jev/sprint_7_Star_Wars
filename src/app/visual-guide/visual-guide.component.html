@@ -1,5 +1,4 @@
 
-
 @if(category === 'planets'){
    <div class="container-fluid text-center">
       <div class="mx-5">
@@ -7,11 +6,9 @@
          <p class="text-light mx-2 custom-font">Planets</p>
          <hr class="custom-hr">
       </div>
-
       <div class="row justify-content-center"> 
          @for(planet of planets; track $index){
          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-   
             <div class="card">
                <img [src]="planet.image" alt="{{planet.name}}" class="card-img-top" (error)="setDefaultImage($event)">
                <div class="card-body">
@@ -25,7 +22,6 @@
 </div>
 }
 
-
 @if(category === 'films'){
    <div class="container-fluid text-center">
       <div class="mx-5">
@@ -33,25 +29,21 @@
          <p class="text-light mx-2 custom-font">Films</p>
          <hr class="custom-hr">
       </div>
-
       <div class="row row-cols-6 justify-content-center"> 
          @for(film of films; track $index){
          <div class="col d-flex justify-content-center mb-4">
-   
             <div class="card">
                <img [src]="film.image" alt="{{film.title}}" class="card-img-top" (error)="setDefaultImage($event)">
       <div class="card-body">
          <p class="card-title"> Episode: {{convertToRoman(film.episode_id)}}</p>
          <p class="card-title">{{film.title}}</p>
          <p class="card-text">Release Date: {{film.release_date}}</p>
-      
       </div>
       </div>
    </div>}
    </div>
 </div>
 }
-
 
 @if(category === 'characters'){
    <div class="container-fluid text-center">
@@ -60,11 +52,9 @@
          <p class="text-light mx-2 custom-font">Characters</p>
          <hr class="custom-hr">
       </div>
-
       <div class="row justify-content-center"> 
          @for(character of characters; track $index){
          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-   
             <div class="card">
                <img [src]="character.image" alt="{{character.name}}" class="card-img-top" (error)="setDefaultImage($event)">
                <div class="card-body">
@@ -83,18 +73,15 @@
          <p class="text-light mx-2 custom-font">Species</p>
          <hr class="custom-hr">
       </div>
-
       <div class="row justify-content-center"> 
          @for(specie of species; track $index){
          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-   
             <div class="card">
                <img [src]="specie.image" alt="{{specie.name}}" class="card-img-top" (error)="setDefaultImage($event)">
                <div class="card-body">
                   <p class="card-title">{{specie.name}}</p>
                   <p class="card-title">{{specie.classification}}</p>
                   <p class="card-title">{{specie.language}}</p>
-
                </div>
             </div>
          </div>}
@@ -109,11 +96,9 @@
          <p class="text-light mx-2 custom-font">Vehicles</p>
          <hr class="custom-hr">
       </div>
-
       <div class="row justify-content-center"> 
          @for(vehicle of vehicles; track $index){
          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-   
             <div class="card">
                <img [src]="vehicle.image" alt="{{vehicle.name}}" class="card-img-top" (error)="setDefaultImage($event)">
                <div class="card-body">
@@ -135,11 +120,9 @@
          <p class="text-light mx-2 custom-font">Starships</p>
          <hr class="custom-hr">
       </div>
-
       <div class="row justify-content-center"> 
          @for(starship of starships; track $index){
          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-   
             <div class="card">
                <img [src]="starship.image" alt="{{starship.name}}" class="card-img-top" (error)="setDefaultImage($event)">
                <div class="card-body">

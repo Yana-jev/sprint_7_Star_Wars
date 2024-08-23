@@ -15,7 +15,6 @@ export class ProfileService {
     if (!this.nextUrl) {
       return of([]); 
     }
-
     return this.http.get<{ results: Profile[], next: string | null }>(this.nextUrl)
       .pipe(
         tap(response => {
@@ -57,7 +56,6 @@ export class ProfileService {
     if (!entityUrl) {
       return 'assets/noship.jpg'; 
     }
-    
     const id = entityUrl.split('/').slice(-2, -1)[0];
     return `https://starwars-visualguide.com/assets/img/${entityType}/${id}.jpg`;
   }
@@ -150,6 +148,6 @@ export class ProfileService {
     )
   }
   
-  }
+}
 
 
