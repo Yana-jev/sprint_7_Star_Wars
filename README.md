@@ -26,9 +26,13 @@ Ensure you have the following installed:
    git clone https://github.com/yourusername/sprint7-star-wars.git
    cd sprint7-star-wars
 
-npm install
-npm install npx json-server-auth db.json
-ng serve
+   
+
+   ```bash
+   npm install
+   npm install npx json-server-auth db.json
+   ng serve
+   
 
 
 Code Scaffolding
