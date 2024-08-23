@@ -1,45 +1,19 @@
 {
   "users": [
     {
-      "email": "popopo@g.com",
-      "password": "$2a$10$ur2PFnsbJTxFhujc/.wVYuGRMQLZeiQVxuWw4sS/0LmVikSkrwdce",
+      "email": "r2d2@g.com",
+      "password": "$2a$10$VLOjYtG8KmhDGH0tGUsXsuGFBOxZxMyIinExg9UBpslmLIb6lDfX6",
       "id": 1
     },
     {
-      "email": "leya@g.com",
-      "password": "$2a$10$WDpzaQLOkkmxtW.M9dDOk.vj.X1w1RiDhw9evXT6Odt905zOEjH2O",
+      "email": "luke@g.com",
+      "password": "$2a$10$BRz/Q.1rzNBkIGBdgTmZkOTkuIa25eHnq4LtWDcAaNWLSQGtJkSES",
       "id": 2
     },
     {
-      "email": "darth@gmail.com",
-      "password": "$2a$10$bmCpUAayjeGxa6x9wXqfteQoGLV10PtFs0l9jegxFeydx7GnO0/2q",
-      "id": 3
-    },
-    {
-      "email": "luke@g.com",
-      "password": "$2a$10$sLTTmsVic3OjCCXI9YDUKu3WeSma5Houo0I6Tu.0ZsNaZq4VWiBRW",
-      "id": 4
-    },
-    {
-      "email": "kirill@wad.cat",
-      "password": "$2a$10$73BuNbq6GTzQ2OaGgHHwFekG7Eu.D9EkMCouvYS1do8vrh/NJt6c.",
-      "id": 5
-    },
-    {
       "email": "iamyourfather@gmail.com",
-      "password": "$2a$10$GYbZ0r22N8w/66o1bnQL1.AEoQ3mN4F8Us8kxy0vPqi4obdLgtZRS",
-      "id": 6
-    },
-    {
-      "email": "lolo@g.com",
-      "password": "$2a$10$NcK33EJ3VBKGtHsAxGeoHuF7rZu3G1InkoUnGVUZTmgQ43mI.wf7u",
-      "username": "lololo",
-      "id": 7
-    },
-    {
-      "email": "r2d2@g.com",
-      "password": "$2a$10$wm/tcE1/oPTwT2QTFe7Ove7QP7kG.sdJmTPWrH.Q29OMlew5dwo9K",
-      "id": 8
+      "password": "$2a$10$CT4FOPUouQLrFy3E/32vFeLS0qrzl7DM3SamAmSN87p4TG4OO3saW",
+      "id": 3
     }
   ]
 }
